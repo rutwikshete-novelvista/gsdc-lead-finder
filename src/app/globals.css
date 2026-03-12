@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .tag-pill {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium border transition-all;
+  }
+  .tag-pill-active {
+    @apply bg-gsdc-blue text-white border-gsdc-blue;
+  }
+  .tag-pill-inactive {
+    @apply bg-white text-gray-600 border-gray-300 hover:border-gsdc-blue hover:text-gsdc-blue cursor-pointer;
+  }
+  .tag-pill-suggested {
+    @apply bg-blue-50 text-gsdc-blue border-blue-200 hover:bg-blue-100 cursor-pointer;
+  }
+}
